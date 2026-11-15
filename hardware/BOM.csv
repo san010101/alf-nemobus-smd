@@ -1,0 +1,26 @@
+Reference,Quantity,Value,Footprint,Description
+"C1, C2, C3, C5, C6, C7, C8, C9, C11, C12, C14, C15, C16, C17, C18, C19, C20",17,100n,Capacitor_SMD:C_0805_2012Metric,Unpolarized ceramic decoupling capacitor
+"C4, C10",2,47mkF,Capacitor_SMD:C_1210_3225Metric,Polarized bulk power filter capacitor
+C13,1,10n,Capacitor_SMD:C_0805_2012Metric,RC oscillator timing capacitor
+J1,1,X1A,my_lib:PinSocket_1x31_P2.54mm_2,NemoBus edge connector row A (31 pins)
+J2,1,X1B,my_lib:PinSocket_1x31_P2.54mm_2,NemoBus edge connector row B (31 pins)
+J3,1,DENDY JOYSTICK1,Connector_Dsub:DSUB-15_Socket_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset4.94mm,15-pin D-SUB connector for Gamepad 1
+J4,1,DENDY JOYSTICK2,Connector_Dsub:DSUB-15_Socket_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset4.94mm,15-pin D-SUB connector for Gamepad 2
+Q1,1,BC856,Package_TO_SOT_SMD:SOT-23,PNP Transistor for IORQGE bus arbitration (Prusak mod / @Alex_Eburg solution)
+"R1, R2, R4, R5, R8, R10, R12, R13",8,1K,Resistor_SMD:R_0805_2012Metric,Pull-up / Pull-down resistors 1 kOhm
+R3,1,"5,1K",Resistor_SMD:R_0805_2012Metric,RC oscillator timing resistor 5.1 kOhm
+"R6, R7, R9, R11, R14",5,220,Resistor_SMD:R_0805_2012Metric,Series protection & Q1 base resistor 220 Ohm
+"SJ1, SJ2, SJ3",3,Solder Jumper,my_lib:JP_1.12x2.15mm,2-pad solder jumper for upper ROM address configuration
+U1,1,74LS04,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,Hex Inverter (Gamepad 1 polarity inversion)
+"U2, U3, U17",3,74LS138,Package_SO:TSSOP-16_4.4x5mm_P0.65mm,"3-to-8 line decoder (I/O Read, I/O Write, Cartridge CE)"
+U4,1,74LS175,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,4-bit D Flip-Flop with Reset (System ROM bank & mode)
+"U5, U6",2,74HCT245,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,Octal Bus Transceiver 3-State (Joystick ports #1F and #FE)
+U7,1,74HC04,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,Hex Inverter (RC clock generator & Fire-A inverter)
+U8,1,27C010,Package_LCC:PLCC-32_11.4x14.0mm_P1.27mm,System EPROM / Flash 128 KB (8x16K banks)
+U9,1,74LS32,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,Quad 2-input OR gate (Internal /*CSR/ ROM space decoding)
+"U10, U11",2,74LVC2G34,Package_TO_SOT_SMD:SOT-23-6_Handsoldering,Dual non-inverting buffer (Gamepad CLK & SYNC drivers)
+U12,1,74HC390,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,Dual BCD 4-bit counter (Gamepad SYNC latch divider)
+U13,1,74LS174,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,Hex D-type Flip-Flop with Reset (Cartridge ROM bank)
+"U14, U16",2,74HC595,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,8-bit serial-in/parallel-out shift register (Gamepad data)
+U15,1,27C080,Socket:DIP_Socket-32_W11.9mm_W12.7mm_W15.24mm_W17.78mm_W18.5mm_3M_232-1285-00-0602J,Cartridge EPROM / Flash up to 1 MB (DIP-32)
+U18,1,SN74AHCT1G08,Package_TO_SOT_SMD:SOT-353_SC-70-5,"Single 2-input AND Gate (IORQGE bus arbitration, Prusak mod / @Alex_Eburg solution)"
